@@ -1,0 +1,119 @@
+    body {
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    div#wrapper {
+        width: 450px;
+        background: #1E272E;
+        margin: 42px auto;
+    }
+
+    div#wrapper div#head,
+    div#body,
+    div#footer {
+        /* padding-top: 23px; */
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    div#wrapper div#head {
+        padding-top: 23px;
+    }
+
+    div#wrapper div#footer {
+        padding-bottom: 30px;
+    }
+
+    div#wrapper form#frmCreateTask {
+        justify-content: space-between;
+        display: flex;
+    }
+
+    div#wrapper button#btn_task {
+        background: #FF2B2B;
+        border: none;
+        outline: none;
+        padding: 10px 10px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        font-weight: 13px;
+    }
+
+    div#wrapper input#inputTaskText {
+        color: #FF6F6F;
+        /* padding-top: 10px; */
+        margin-bottom: 10px;
+        background: transparent;
+        outline: none;
+        border: none;
+        /* text-transform: uppercase; */
+        width: 287px;
+        border-bottom: 1px solid #FF6F6F;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    div#wrapper input#inputTaskText::placeholder {
+        color: #FF6F6F;
+    }
+
+    div#wrapper div#body {
+        margin-top: 27px;
+        padding-bottom: 27px;
+    }
+
+    div#wrapper ul#list_task {
+        list-style: none;
+        padding-left: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    div#wrapper li.task_item {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0px;
+        border-bottom: 1px solid #6D6C6C;
+    }
+
+    div#wrapper span.task {
+        font-size: 15px;
+        text-transform: initial;
+        color: #C7C7C7;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    div#wrapper .task_action button {
+        background: transparent;
+        border: none;
+        color: #C7C7C7;
+        outline: none;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    div#wrapper li.task_item:hover {
+        color: #FFFFFF;
+    }
+
+    div#wrapper li.task_item:hover :is(span.task, div.task_action button) {
+        color: #FFFFFF !important;
+    }
+
+    div#wrapper ul#list_task li.task_item[is_complete='true'] span.task {
+        text-decoration: line-through;
+        color: #676767;
+    }
+    div#wrapper button {
+        cursor: pointer;
+    }
+
+    #footer span#task_rs {
+        color: #828282;
+        font-style: italic;
+        font-size: 13px;
+    }
